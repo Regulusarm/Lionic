@@ -323,6 +323,10 @@ html {
 }
 
 /* Contacts */
+.contacts {
+  border-bottom: 1px solid #e4e4e4;
+}
+
 .contacts-container {
   padding-top: 70px;
   padding-bottom: 95px;
@@ -369,6 +373,20 @@ html {
 .section-contacts-heading {
   display: block;
   margin-bottom: 40px;
+  font-size: 17px;
+  line-height: 1;
+  color: #1c1c1c;
+}
+
+.section-contacts-info {
+  font-size: 14px;
+  line-height: 25px;
+  color: #787878;
+
+}
+
+.section-contacts-link {
+  color: #787878;
 }
 
 /* Footer */
@@ -389,9 +407,14 @@ html {
   
 }
 
-.footer-left {
+.footer-left, .footer-right {
   display: flex;
   align-items: center;
+}
+.footer-copyrights {
+  font-size: 12px;
+  line-height: 17px;
+  color: #787878;
 }
 
 .footer-logo {
@@ -401,4 +424,51 @@ html {
 .footer-nav-item:not(:last-child) {
   margin-right: 35px;
 }
-        
+
+.footer-social-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer-nav {
+  margin-right: 55px;
+}
+
+.footer-nav-item {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.footer-nav-link {
+  color: #787878;
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-icon {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center center;
+}
+
+.footer-social-icon-twitter {
+  background-image: url(img/Twitter.png);
+  width: 18px;
+  height: 15px;
+}
+.footer-social-icon-linked {
+  background-image: url(img/Linkedin.png);
+  width: 18px;
+  height: 19px;
+  transform: translateY(-2px);
+}
+
+.footer-social-icon-email {
+  background-image: url(img/Email.png);
+  width: 24px;
+  height: 17px;
+}
