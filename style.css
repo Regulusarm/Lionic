@@ -48,6 +48,7 @@ img {
 
 a {
   text-decoration: none;
+  outline: 3px solid rgb(0, 0, rgb(72, 72, 73));
 }
 
 ul {
@@ -71,10 +72,15 @@ html {
   border-radius: 4px;
   cursor: pointer;
   display: inline-block;
+  transition: background-color .3s ease;
 }
 
 .btn.btn-big {
   padding: 20px 60px;
+}
+
+.btn:hover {
+  background-color: #205083;
 }
 
 .container {
@@ -131,14 +137,15 @@ html {
 .nav-link {
   font-weight: bold;
   color: #1c1c1c;
-}
-
-.nav-item.is-active .nav-link {
-  color: #3172b9;
+  transition: color 0.3s ease;
 }
 
 .nav-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.nav-link:hover {
+  color: #3172b9;
 }
 
 .btn-header {
@@ -225,6 +232,18 @@ html {
   flex-direction: column;
   align-items: center;
   padding: 60px 30px;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.section-do-item-heading {
+  margin-bottom: 18px;
+  font-size: 20px;
+  line-height: 1;
+  color: #1c1c1c;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .section-do-item-description {
@@ -234,6 +253,23 @@ html {
   line-height: 21px;
   color: #818181;
   font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.section-do-item:hover {
+  background-color:#3172b9;
+}
+
+.section-do-item:hover .section-do-icon path {
+  fill: white;
+}
+
+.section-do-item:hover .section-do-item-description {
+  color: white;
+}
+
+.section-do-item:hover .section-do-item-heading {
+  color: white;
 }
 
 .section-do-item:not(:last-child) {
@@ -244,14 +280,9 @@ html {
   margin-bottom: 30px;
 }
 
-.section-do-item-heading {
-  margin-bottom: 18px;
-  font-size: 20px;
-  line-height: 1;
-  color: #1c1c1c;
-  font-weight: 600;
+path {
+  transition: fill .3s ease;
 }
-
 
 
 /* Clients */
